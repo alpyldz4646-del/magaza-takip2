@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Saha Defteri — Tanıtım</title>
+  <style>
+    :root { color-scheme: light; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: #f3efe6;
+      color: #1c1915;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 28px 16px 48px;
+    }
+    p.kicker {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      font-size: 12px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #8a8376;
+    }
+    h1 {
+      margin: 8px 0 6px;
+      font-size: 40px;
+      font-weight: 560;
+      letter-spacing: -0.03em;
+    }
+    .lead {
+      margin: 0 0 18px;
+      font-family: system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.45;
+      color: #6d675c;
+    }
+    video {
+      width: 100%;
+      background: #1d4a46;
+      border-radius: 16px;
+      display: block;
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
+    }
+    a.btn {
+      font-family: system-ui, sans-serif;
+      text-decoration: none;
+      background: #1d4a46;
+      color: #f4f1ea;
+      border-radius: 10px;
+      padding: 12px 16px;
+      font-size: 15px;
+      font-weight: 650;
+    }
+    a.ghost {
+      font-family: system-ui, sans-serif;
+      text-decoration: none;
+      color: #1d4a46;
+      border: 1px solid #d9d0c0;
+      background: #fbf8f2;
+      border-radius: 10px;
+      padding: 12px 16px;
+      font-size: 15px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="kicker">İK İş Ortağı Müdürlüğü</p>
+    <h1>Saha Defteri</h1>
+    <p class="lead">Üst yönetim tanıtımı. Video bu sayfada oynar. Ayrı bir tarayıcı açılmaz.</p>
+    <video controls playsinline preload="metadata" poster="">
+      <source src="/saha-defteri-tanitim.mp4" type="video/mp4" />
+    </video>
+    <div class="row">
+      <a class="btn" href="/saha-defteri-tanitim.mp4" download="saha-defteri-tanitim.mp4">Videoyu indir</a>
+      <a class="ghost" href="/">Giriş ekranına dön</a>
+    </div>
+  </main>
+</body>
+</html>
